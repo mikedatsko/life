@@ -1,0 +1,28 @@
+{
+    "name": "it.datsko.walls",
+    "version": "1.0.1",
+    "displayName": "Walls",
+    "scripts": {
+        "watch": "cordova serve",
+        "server": "light-server -s ./www -p 8000",
+        "build:android": "cordova build android",
+        "build:ios": "cordova build ios"
+    },
+    "cordova": {
+        "platforms": [
+            "android",
+            "ios"
+        ],
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-device": {}
+        }
+    },
+    "dependencies": {
+        "cordova-android": "~6.1.2",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-device": "^1.1.6",
+        "cordova-plugin-whitelist": "1",
+        "light-server": "^2.0.2"
+    }
+}

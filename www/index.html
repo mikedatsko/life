@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval'; connect-src * data: gap: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *; img-src * data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; connect-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="js/vendors/roundslider.min.css">
+    <link rel="stylesheet" type="text/css" href="src/assets/css/style.css">
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- Audio -->
+    <audio id="audio_put">
+      <source src="./src/assets/audio/walls-put.m4a" type="audio/mpeg">
+    </audio>
+
+    <audio id="audio_clear">
+      <source src="./src/assets/audio/walls-clear.m4a" type="audio/mpeg">
+    </audio>
+
+    <audio id="audio_select">
+      <source src="./src/assets/audio/walls-select.m4a" type="audio/mpeg">
+    </audio>
+
+    <audio id="audio_btn_click">
+      <source src="./src/assets/audio/walls-btn-click.m4a" type="audio/mpeg">
+    </audio>
+
+    <!-- Vendors -->
+    <script src="cordova.js"></script>
+    <script src="js/vendors/client.min.js"></script>
+    <script src="js/vendors/jquery.js"></script>
+    <script src="js/vendors/jquery-ui.min.js"></script>
+    <script src="js/vendors/jquery.touch.punch.js"></script>
+    <script src="js/vendors/roundslider.min.js"></script>
+
+    <!-- App -->
+    <script src="js/log/log.js"></script>
+    <script src="js/app/app.js"></script>
+
+    <!-- App functionality -->
+    <script src="js/app/audio.js"></script>
+    <script src="js/app/notify.js"></script>
+    <script src="js/app/ask-name.js"></script>
+    <script src="js/app/user.js"></script>
+    <script src="js/app/menu.js"></script>
+    <script src="js/app/events.js"></script>
+    <script src="js/app/xhr.js"></script>
+    <script src="js/app/utils.js"></script>
+    <script src="js/app/config.js"></script>
+    <script src="js/app/router.js"></script>
+
+    <!-- Home -->
+    <script src="js/app/pages/home/index.js"></script>
+
+    <!-- Level 1 -->
+    <script src="js/app/pages/level/index.js"></script>
+    <script src="js/app/pages/level/init.js"></script>
+    <script src="js/app/pages/level/end.js"></script>
+    <script src="js/app/pages/level/check.js"></script>
+    <script src="js/app/pages/level/draw.js"></script>
+    <script src="js/app/pages/level/add-items.js"></script>
+    <script src="js/app/pages/level/get-groups.js"></script>
+    <script src="js/app/pages/level/start.js"></script>
+
+    <!-- Settings -->
+    <script src="js/app/settings.js"></script>
+    <script src="js/app/routing.js"></script>
+
+    <!-- Init -->
+    <script src="js/app/init.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
